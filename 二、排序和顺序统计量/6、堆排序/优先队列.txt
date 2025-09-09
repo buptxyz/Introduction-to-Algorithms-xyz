@@ -1,0 +1,9 @@
+优先队列priority_queue
+头文件<queue>
+priority_queue< type, container, function>
+type 类型
+container：实现优先队列的底层容器（缺省）
+function：元素之间的比较方式（缺省）
+对于container，要求必须是数组形式实现的容器，例如vector、deque，而不能使list。
+在STL中，默认情况下（不加后面两个参数）是以vector为容器，以 operator< 为比较方式，所以在只使用第一个参数时，优先队列默认是一个最大堆，每次输出的堆顶元素是此时堆中的最大元素。
+
